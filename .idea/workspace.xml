@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b9adb6c-f160-43bf-a547-10fa62c93b2b" name="Changes" comment="Merge branch 'main' of https://github.com/Varungoud06/DailyCred into feature/borrower&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/AuthServiceImpl.java&#10;#&#9;Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/JwtServiceImpl.java&#10;#&#9;Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/LoanPlanServiceImpl.java">
-      <change afterPath="$PROJECT_DIR$/Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/JwtServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/LoanPlanServiceImpl.java" afterDir="false" />
+    <list default="true" id="9b9adb6c-f160-43bf-a547-10fa62c93b2b" name="Changes" comment="Merge branch 'main' of https://github.com/Varungoud06/DailyCred into feature/borrower&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/AuthServiceImpl.java&#10;#&#9;Dailycred/src/main/resources/application.properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/LenderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/LenderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dailycred/src/main/java/com/unqiuehire/kashflow/serviceimpl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dailycred/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Dailycred/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
