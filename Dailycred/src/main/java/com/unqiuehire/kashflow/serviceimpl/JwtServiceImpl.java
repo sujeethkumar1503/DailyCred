@@ -1,4 +1,4 @@
-package com.unqiuehire.kashflow.serviceImpl;
+package com.unqiuehire.kashflow.serviceimpl;
 
 import com.unqiuehire.kashflow.service.JwtService;
 import io.jsonwebtoken.*;
