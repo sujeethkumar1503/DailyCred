@@ -1,4 +1,4 @@
-package com.unqiuehire.kashflow.serviceImpl;
+package com.unqiuehire.kashflow.serviceimpl;
 
 import com.unqiuehire.kashflow.dto.requestdto.LoginRequest;
 import com.unqiuehire.kashflow.dto.responsedto.LoginResponse;
