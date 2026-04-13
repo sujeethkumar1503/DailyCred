@@ -1,6 +1,6 @@
 package com.unqiuehire.kashflow.constant;
 
-public enum ApplicationStatus {
+public enum StatusEnum {
     PENDING,
     APPROVED,
     REJECTED,

@@ -1,7 +1,7 @@
 package com.unqiuehire.kashflow.serviceImpl;
 
 import com.unqiuehire.kashflow.constant.ApiStatus;
-import com.unqiuehire.kashflow.constant.ApplicationStatus;
+import com.unqiuehire.kashflow.constant.StatusEnum;
 import com.unqiuehire.kashflow.constant.MessageConstants;
 import com.unqiuehire.kashflow.dto.requestdto.LoanApplicationRequestDto;
 import com.unqiuehire.kashflow.dto.responsedto.ApiResponse;
@@ -28,7 +28,7 @@ public class LoanApplicationServiceImpl implements LoanApplicationService {
         app.setLenderId(dto.getLenderId());
         app.setPlanId(dto.getPlanId());
         app.setLoanAmount(dto.getLoanAmount());
-        app.setStatus(ApplicationStatus.PENDING);
+        app.setStatus(StatusEnum.PENDING);
         app.setApplicationDate(LocalDate.now());
 
         LoanApplication saved = repository.save(app);
@@ -107,11 +107,11 @@ public class LoanApplicationServiceImpl implements LoanApplicationService {
                         MessageConstants.LOAN_APPLICATION_NOT_FOUND.getMessage()
                 ));
 
-        if (app.getStatus() == ApplicationStatus.CANCELLED) {
+        if (app.getStatus() == StatusEnum.CANCELLED) {
             throw new IllegalArgumentException("Application already cancelled");
         }
 
-        app.setStatus(ApplicationStatus.CANCELLED);
+        app.setStatus(StatusEnum.CANCELLED);
         repository.save(app);
 
         return new ApiResponse<>(

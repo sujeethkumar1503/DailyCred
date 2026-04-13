@@ -1,6 +1,6 @@
 package com.unqiuehire.kashflow.entity;
 
-import com.unqiuehire.kashflow.constant.ApplicationStatus;
+import com.unqiuehire.kashflow.constant.StatusEnum;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,7 +24,7 @@ public class LoanApplication {
     private Double loanAmount;
 
     @Enumerated(EnumType.STRING)
-    private ApplicationStatus status;
+    private StatusEnum status;
 
     private LocalDate applicationDate;
 }
