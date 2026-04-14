@@ -73,7 +73,7 @@ public class RepaymentServiceImpl implements RepaymentService {
 
     @Override
     public List<RepaymentResponseDTO> getByLoan(Long loanId) {
-        return repaymentRepository.findByLoanId(loanId)
+        return repaymentRepository.findByLoanLoanId(loanId)
                 .stream()
                 .map(this::mapToDTO)
                 .collect(Collectors.toList());
@@ -81,7 +81,7 @@ public class RepaymentServiceImpl implements RepaymentService {
 
     @Override
     public List<RepaymentResponseDTO> getByLoanApplication(Long loanApplicationId) {
-        return repaymentRepository.findByLoanApplicationId(loanApplicationId)
+        return repaymentRepository.findByLoanApplicationApplicationId(loanApplicationId)
                 .stream()
                 .map(this::mapToDTO)
                 .collect(Collectors.toList());

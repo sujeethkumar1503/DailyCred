@@ -25,7 +25,7 @@ public class RepaymentController {
         return repaymentService.getByLoan(loanId);
     }
 
-    @GetMapping("/application/{loanApplicationId}")
+    @GetMapping("/loanapplication/{loanApplicationId}")
     public List<RepaymentResponseDTO> getByLoanApplication(@PathVariable Long loanApplicationId) {
         return repaymentService.getByLoanApplication(loanApplicationId);
     }
