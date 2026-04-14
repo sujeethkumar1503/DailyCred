@@ -36,7 +36,7 @@ public class RepaymentServiceImpl implements RepaymentService {
                 .orElseThrow(() -> new RuntimeException("Loan Application not found"));
 
         //  VALIDATION
-        if (!loan.getLoanApplication().getId().equals(loanApplication.getId())) {
+        if (!loan.getLoanApplicationId().equals(request.getLoanApplicationId())) {
             throw new RuntimeException("Loan does not belong to given LoanApplication");
         }
 
@@ -50,7 +50,7 @@ public class RepaymentServiceImpl implements RepaymentService {
         loan.setRemainingAmount(remaining);
 
         if (remaining == 0) {
-            loan.setLoanStatus("CLOSED");
+            loan.setIsClosed(true);
         }
 
         loanRepository.save(loan);

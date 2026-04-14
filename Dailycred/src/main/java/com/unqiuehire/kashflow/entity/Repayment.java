@@ -1,6 +1,6 @@
 package com.unqiuehire.kashflow.entity;
 
-import com.unqiuehire.kashflow.LoanApplication;
+import com.unqiuehire.kashflow.entity.LoanApplication;
 import com.unqiuehire.kashflow.constant.PaymentMode;
 import com.unqiuehire.kashflow.constant.PaymentStatus;
 import jakarta.persistence.*;
@@ -39,6 +39,6 @@ public class Repayment {
 
     // 🔗 Loan Application
     @ManyToOne
-    @JoinColumn(name = "loan_application_id", nullable = false)
+    @JoinColumn(name = "loan_applications_id", nullable = false)
     private LoanApplication loanApplication;
 }
